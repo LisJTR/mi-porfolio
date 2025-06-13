@@ -46,3 +46,32 @@ p {
 h2 {
     margin-left: 70px;
 }
+
+/* Ícono ojo */
+.fa-solid {
+  cursor: pointer;
+}
+
+/* Contenedor relativo para posicionar imagen encima */
+#contenedorCertificado {
+  position: relative;
+  display: inline-block;
+}
+
+/* Imagen oculta por defecto */
+#miImagen {
+  display: none;
+  position: absolute;
+  top: -220px; /* ajusta según tamaño */
+  left: 0;
+  width: 300px;
+  z-index: 10;
+  box-shadow: 0 0 8px #888;
+  border-radius: 4px;
+  transition: opacity 0.2s ease-in-out;
+}
+
+/* Clase visible */
+#miImagen.visible {
+  display: block;
+}
