@@ -8,232 +8,330 @@
   <title>Porfolio</title>
 </head>
 <body>
-  <div class="container">
-    <nav class="sidebar">
-      <ul>
-        <li><img src="Image/Icono_porfolio.png" alt="Imagen perfil" width="100" class="Icono_porfolio"/></li>
-        <li><a href="#lis">LIS</a></li>
-        <li><a href="#sobre-mi">SOBRE MI</a></li>
-        <li><a href="#proyectos">PROYECTOS</a></li>
-        <li><a href="#educacion">EDUCACIÓN</a></li>
-        <li><a href="#certificados">CERTIFICADOS</a></li>
-        <li><a href="#skills">SKILLS</a></li>
-        <li><a href="#contacto">CONTACTO</a></li>
-      </ul>
-    </nav>
+    <header class="navbar">
+        <div class="logo">
+          <div class="logo-circulo"></div>
+          <span class="nombre-logo">LIS</span>
+        </div>
+        <nav class="menu">
+          <a href="#sobre-mi">SOBRE MI</a>
+          <a href="#skills">SKILLS</a>
+          <a href="#proyectos">PROYECTOS</a>
+          <a href="#contacto">CONTACTOS</a>
+          <a href="download/CV_ES.pdf" class="boton-resume" download>
+            <i class="fas fa-file-alt"></i> CV ES
+          </a>
+          <a href="download/CV_IN.pdf" class="boton-resume" download>
+            <i class="fas fa-file-alt"></i> CV IN
+          </a>
+        </nav>
+      </header>
 
     <main class="contenido">
 
-      <section id="lis">
-        <h2>JOSSELYN LIZETH TORRES ROBALINO</h2>
-        <p>Descarga mi CV</p>
-        <table>
-          <tr>
-            <td>
-              <a href="download/Josselyn Lizeth Torres Robalino_CV.pdf" download="Josselyn Lizeth Torres Robalino_CV.pdf" >
-                <button>ESPAÑOL</button> 
-              </a>
-            </td>
-            <td>
-              <a href="download/Josselyn Lizeth Torres Robalino_CV_.pdf" download="Josselyn Lizeth Torres Robalino_CV_.pdf">
-                <button>INGLES</button> 
-              </a>
-            </td>
-          </tr>
-          <tr>  
-            <td>
-            
-                <a href="mailto:lis.torres.robalino@gmail.com">
-                  <img title="Correo electronico" src="Image/gmail.png">
-                </a>
-              
-            </td>
-            <td>
-      
-                <a href="https://www.linkedin.com/in/josselyn-lizeth-torres-robalino"  target="_blank">
-                 <img title="Linkedlin" src="Image/linkedin_.png">
-                </a>
-              
-            </td>
-             <td>
-            
-                <a href="https://github.com/LisJTR"  target="_blank">
-                 <img title="github" src="Image/github_.png">
-                </a>
-              
-            </td>
-          </tr>
-        </table>
-
+      <section id="inicio" class="hero">
+        <div class="hero-texto">
+          <h1><span class="bold">Software Developer.</span><br><span class="bold">FullStack. </span><br><span class="resaltado">Josselyn Lizeth Torres.</span></h1>
+          <p>Creando soluciones de software centradas en mejorar la experiencia del usuario y aportar una visión más humana al mundo digital.</p>
+          
+          <div class="botones-hero">
+            <a href="#sobre-mi" class="boton-hero">Sobre mi</a>
+            <a href="mailto:lis.torres.robalino@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
+            <a href="https://www.linkedin.com/in/josselyn-lizeth-torres-robalino" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://github.com/LisJTR" target="_blank"><i class="fab fa-github"></i></a>
+        
+          </div>
+        </div>
+        <div class="hero-imagen">
+          <img src="Image/img_sobreMi.png" alt="Imagen ilustrativa de desarrolladora" />
+        </div>
       </section>
 
-      <section id="sobre-mi">
-        <h2>SOBRE MI</h2>
-            <p cass="description">Después de más de 10 años en hostelería y tras estudiar Asistencia a la Dirección, un día decidí lanzarme y dedicarme a lo que realmente me gusta: programar, crear cosas desde cero y resolver problemas.
-            Mi experiencia en otros sectores me ha permitido desarrollar habilidades fundamentales como la resolución de problemas, la comunicación y la adaptabilidad.
-            Tras finalizar el ciclo de DAM, pude sentar una base sólida y colaborar en proyectos reales. 
-            </p>
-            <p>Actualmente busco nuevas oportunidades para seguir creciendo, aportar a mi equipo y aplicar todo lo aprendido en el desarrollo de soluciones útiles.</p>
-
-            <p>Puedes contactarme en mi correo: lis.torres.robalino@gmail.com</p>
+      <section id="sobre-mi" class="sobre-mi-wrapper">
+        <div class="sobre-mi-box sobre-mi-texto">
+          <h2>Soy <strong>Josselyn Lizeth</strong>, a <strong>full-stack developer</strong> y una apasionada de la tecnología.</h2>
+          <p>Tras más de 10 años en hostelería decidí reinventarme y dedicarme a lo que realmente me gusta: programar, crear cosas desde cero y resolver problemas. Mi experiencia en otros sectores me ha permitido desarrollar habilidades como la resolución de problemas, la comunicación y la adaptabilidad.</p>
+          <p>Tras finalizar el ciclo de DAM, pude sentar una base sólida y colaborar en proyectos reales. Actualmente busco nuevas oportunidades para seguir creciendo y aplicar todo lo aprendido en el desarrollo de soluciones útiles.</p>
+          <a href="#contacto" class="btn-contacto">Contáctame</a>
+        </div>
       </section>
 
-      <section id="proyectos">
 
-        <div class="card">
-          <img src="Image/Inicio_Userwork.png">
-            <div class="card-content">
-              <h2>UserWork</h2>
-              <p class="card-description">
-                App Android que conecta estudiantes de FCT con empresas que ofrecen prácticas.
-              </p>
-              <img src="https://img.shields.io/badge/Spring_Boot-6DB33F?style=for-the-badge&logo=spring-boot&logoColor=white" alt="Spring Boot">
-              <img src="https://img.shields.io/badge/Kotlin-0095D5?style=for-the-badge&logo=kotlin&logoColor=white" alt="Kotlin">
-              <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" alt="Docker">
-              <img src="https://img.shields.io/badge/PostgreSQL-336791?style=for-the-badge&logo=postgresql&logoColor=white" alt="PostgreSQL">
-              <img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white" alt="Java">
-            </div>
-        </div>
 
-        <div class="card">
-          <img src="Image/Inicio_EcoSwap.png">
-            <div class="card-content">
-              <h2>EcoSwap</h2>
-              <p class="card-description">
-                App multiplataforma para comprar y vender productos usados, dando una segunda vida a lo que ya no necesitas.
-              </p>
-              <img src="https://img.shields.io/badge/React_Native-61DAFB?style=for-the-badge&logo=react&logoColor=white" alt="React Native">
-              <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React">
-              <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5">
-              <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3">
-              <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white" alt="Node.js">
-              <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript">
-              <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript">
-            </div>
-        </div>
+      <section id="proyectos" class="proyectos-wrapper">
+
+        <h2>PROYECTOS</h2>
+        
+        <h3>MOVILES</h3>
+
+        <div class="cards-container">
+          
+          <div class="card">
+            <img src="Image/Inicio_Userwork.png" alt="UserWork" class="card-bg">
+            <a href="https://github.com/LisJTR/UserWork-Android" target="_blank" class="github-icon">
+              <i class="fab fa-github"></i>
+            </a>
+              <div class="card-content">
+               <h2>UserWork</h2> 
+                <p class="card-description">
+                  App Android que conecta estudiantes de FCT con empresas que ofrecen prácticas.
+                </p>
+                <div class="shields">
+                  <img src="https://img.shields.io/badge/Spring_Boot-6DB33F?style=for-the-badge&logo=spring-boot&logoColor=white" alt="Spring Boot">
+                  <img src="https://img.shields.io/badge/Kotlin-0095D5?style=for-the-badge&logo=kotlin&logoColor=white" alt="Kotlin">
+                  <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" alt="Docker">
+                  <img src="https://img.shields.io/badge/PostgreSQL-336791?style=for-the-badge&logo=postgresql&logoColor=white" alt="PostgreSQL">
+                  <img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white" alt="Java">
+                  <img src="https://img.shields.io/badge/Git_Flow-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Git Flow">
+                </div>
+              </div>     
+          </div>
         
           <div class="card">
-          <img src="Image/Incio_InfoMovie.png">
-            <div class="card-content">
-              <h2>InfoMovie</h2>
-              <p class="card-description">
-                App movil para obtener información de peliculas.
-              </p>
-              <img src="https://img.shields.io/badge/Jetpack_Compose-4285F4?style=for-the-badge&logo=jetpackcompose&logoColor=white" alt="Jetpack Compose">
-              <img src="https://img.shields.io/badge/Room_DB-6C3483?style=for-the-badge&logo=android&logoColor=white" alt="Room Database">
-              <img src="https://img.shields.io/badge/Navigation_Component-0D47A1?style=for-the-badge&logo=android&logoColor=white" alt="Navigation Component">
-              <img src="https://img.shields.io/badge/Retrofit-00579C?style=for-the-badge&logo=retrofit&logoColor=white" alt="Retrofit">
-              <img src="https://img.shields.io/badge/Android_Notifications-4CAF50?style=for-the-badge&logo=android&logoColor=white" alt="Android Notifications">
-              <img src="https://img.shields.io/badge/Coil-FF7043?style=for-the-badge&logo=kotlin&logoColor=white" alt="Coil Image Loader">
+            
+            <img src="Image/Inicio_EcoSwap.png" alt="EcoSwap" class="card-bg">
+            <a href="https://github.com/LisJTR/EcoSwap-Multiplatform" target="_blank" class="github-icon">
+              <i class="fab fa-github"></i>
+            </a>
+              <div class="card-content">
+                  <h2>EcoSwap</h2>
+                <p class="card-description">
+                  App multiplataforma para comprar y vender productos usados, dando una segunda vida a lo que ya no necesitas.
+                </p>
+                <div class="shields">
+                  <img src="https://img.shields.io/badge/React_Native-61DAFB?style=for-the-badge&logo=react&logoColor=white" alt="React Native">
+                  <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React">
+                  <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5">
+                  <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3">
+                  <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white" alt="Node.js">
+                  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript">
+                  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript">
+                  <img src="https://img.shields.io/badge/Git_Flow-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Git Flow">
+                </div>
+              </div>
+          </div>
+
+          <div class="card">
+            <img src="Image/Incio_InfoMovie.png" alt="InfoMovie" class="card-bg">
+            <a href="https://github.com/LisJTR/ProyectoFinal_AndroidStudio" target="_blank" class="github-icon">
+              <i class="fab fa-github"></i>
+            </a>
+              <div class="card-content">
+                 <h2>InfoMovie</h2>
+                  <p class="card-description">
+                    App movil para obtener información de peliculas.
+                  </p>
+                <div class="shields"> 
+                <img src="https://img.shields.io/badge/Jetpack_Compose-4285F4?style=for-the-badge&logo=jetpackcompose&logoColor=white" alt="Jetpack Compose">
+                <img src="https://img.shields.io/badge/Room_DB-6C3483?style=for-the-badge&logo=android&logoColor=white" alt="Room Database">
+                <img src="https://img.shields.io/badge/Navigation_Component-0D47A1?style=for-the-badge&logo=android&logoColor=white" alt="Navigation Component">
+                <img src="https://img.shields.io/badge/Retrofit-00579C?style=for-the-badge&logo=retrofit&logoColor=white" alt="Retrofit">
+                <img src="https://img.shields.io/badge/Android_Notifications-4CAF50?style=for-the-badge&logo=android&logoColor=white" alt="Android Notifications">
+                <img src="https://img.shields.io/badge/Coil-FF7043?style=for-the-badge&logo=kotlin&logoColor=white" alt="Coil Image Loader">
+                <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Git">
+              </div>
+              </div>
             </div>
-        </div>
+          </div>
 
+            <h3>BACKEND</h3>
+
+          <div class="cards-container"> 
+              <div class="card">
+                <img src="Image/proyecto_curso-.png" alt="UserWork" class="card-bg">
+                <a href="https://github.com/LisJTR/" target="_blank" class="github-icon">
+                  <i class="fab fa-github"></i>
+                </a>
+                  <div class="card-content">
+                  <h2>En proceso..</h2> 
+                    <p class="card-description">
+                      Sistema de Gestión de Pedidos.
+                    </p>
+                    <div class="shields">
+                      <img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white" alt="Java">
+                      <img src="https://img.shields.io/badge/Spring_Boot-6DB33F?style=for-the-badge&logo=spring-boot&logoColor=white" alt="Spring Boot">
+                      <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" alt="Docker">
+                      <img src="https://img.shields.io/badge/PostgreSQL-336791?style=for-the-badge&logo=postgresql&logoColor=white" alt="PostgreSQL">
+                      <img src="https://img.shields.io/badge/JWT-000000?style=for-the-badge&logo=jsonwebtokens&logoColor=white" alt="JWT">
+                      <img src="https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=githubactions&logoColor=white" alt="GitHub Actions">
+                    </div>
+                  </div>     
+              </div>
       </section>
 
-      <section class="educacion">
-        <h2>EDUCACIÓN</h2>
-       
-        <table>
-         <tr>
-          <td><h3>Técnico Superior en Desarrollo de Aplicaciones Multiplataforma (DAM)</h3></td>
-          <td>| IES Islas Filipinas</td>
-          <td>| 2023-2025</td>
-         </tr>
-          <tr>
-          <td><h3>Técnico Superior en Asistencia a la Dirección</h3></td>
-          <td>| IES Islas Filipinas</td>
-          <td>| 2019-2022</td>
-         </tr>
-        </table>
-      </section>
-
-      <section class="certificados">
-        <h2>CERTIFICADOS</h2>
-
-        <table>
-         <tr>
-          <td><h3>CIBERSEGURIDAD Y PRIVACIDAD PARA EMPRESAS</h3></td>
-          <td>
-            <div id="contenedorCertificado">
-              <i class="fa-solid fa-eye" onclick="toggleImagen()"></i>
-              <img id="miImagen" src="Image/Certificado.png" alt="Certificado">
-            </div>
-          </td>
-        </tr>
-        </table>
-      </section>
-
-      <section class="skills">
+      <section id="skills" class="skills-wrapper">
         <h2>SKILLS</h2>
 
-        <h3>LENGUAJES</h3>
-        <img src="https://img.shields.io/badge/Java-aba099?style=plastic&logo=openjdk&logoColor=white" alt="Java">
-        <img src="https://img.shields.io/badge/Kotlin-aba099?style=plastic&logo=kotlin&logoColor=white" alt="Kotlin">
-        <img src="https://img.shields.io/badge/Python-aba099?style=plastic&logo=python&logoColor=white" alt="Python">
-        <img src="https://img.shields.io/badge/JavaScript-aba099?style=plastic&logo=javascript&logoColor=white" alt="JavaScript">
-        <img src="https://img.shields.io/badge/HTML5-aba099?style=plastic&logo=html5&logoColor=white" alt="HTML5">
-        <img src="https://img.shields.io/badge/CSS3-aba099?style=plastic&logo=css3&logoColor=white" alt="CSS3">
+        <div class="skills-grid">
+          <!-- Lenguajes -->
+          <div class="skill-card">
+            <h3>LENGUAJES</h3>
+            <div class="skill-icons">
+              <img src="https://img.shields.io/badge/Java-aba099?style=plastic&logo=openjdk&logoColor=white" alt="Java">
+              <img src="https://img.shields.io/badge/Kotlin-aba099?style=plastic&logo=kotlin&logoColor=white" alt="Kotlin">
+              <img src="https://img.shields.io/badge/HTML5-aba099?style=plastic&logo=html5&logoColor=white" alt="HTML5">
+              <img src="https://img.shields.io/badge/CSS3-aba099?style=plastic&logo=css3&logoColor=white" alt="CSS3">
+            </div>
+          </div>
 
-        <h3>FRAMEWORKS/LIBRERIAS</h3>
+          <!-- Frameworks -->
+          <div class="skill-card">
+            <h3>FRAMEWORKS Y LIBRERÍAS</h3>
+            <h4>Frontend</h4>
+            <div class="skill-icons">
+              <img src="https://img.shields.io/badge/Jetpack_Compose-a3a3a2?style=plastic&logo=android&logoColor=white" alt="Jetpack Compose">
+                  <img src="https://img.shields.io/badge/Room-a3a3a2?style=plastic&logo=android&logoColor=white" alt="Room DB">
+                  <img src="https://img.shields.io/badge/Retrofit-a3a3a2?style=plastic" alt="Retrofit">
+                  <img src="https://img.shields.io/badge/React_Native-a3a3a2?style=plastic&logo=react&logoColor=white" alt="React Native">
+            </div>
+            <h4>Backend</h4>
+            <div class="skill-icons">
+                  <img src="https://img.shields.io/badge/Spring_Boot-a3a3a2?style=plastic&logo=spring-boot&logoColor=white" alt="Spring Boot">
+                  <img src="https://img.shields.io/badge/Node.js-a3a3a2?style=plastic&logo=node.js&logoColor=white" alt="Node.js">
+            </div>
+          </div>
+          
+          <!-- Herramientas -->
+          <div class="skill-card">
+            <h3>HERRAMIENTAS</h3>
+            <div class="skill-icons">
+                  <img src="https://img.shields.io/badge/Figma-a3a3a2?style=plastic&logo=figma&logoColor=white" alt="Figma">
+            </div>
+          </div>
+
+          <!-- Bases de datos -->
+          <div class="skill-card">
+            <h3>BASES DE DATOS</h3>
+            <div class="skill-icons">
+                <img src="https://img.shields.io/badge/PostgreSQL-9aa5ab?style=plastic&logo=postgresql&logoColor=white" alt="PostgreSQL">
+                <img src="https://img.shields.io/badge/MySQL-9aa5ab?style=plastic&logo=mysql&logoColor=white" alt="MySQL">
+                <img src="https://img.shields.io/badge/SQLite-9aa5ab?style=plastic&logo=sqlite&logoColor=white" alt="SQLite">
+                <img src="https://img.shields.io/badge/Supabase-9aa5ab?style=plastic&logo=supabase&logoColor=white" alt="Supabase">
+            </div>
+          </div>
+
+          <!-- IDEs -->
+          <div class="skill-card">
+            <h3>ENTORNOS DE DESARROLLO</h3>
+            <div class="skill-icons">
+                <img src="https://img.shields.io/badge/Eclipse-90a7b4?style=plastic&logo=eclipseide&logoColor=white" alt="Eclipse">
+                <img src="https://img.shields.io/badge/Visual_Studio_Code-90a7b4?style=plastic&logo=visualstudiocode&logoColor=white" alt="Visual Studio Code">
+                <img src="https://img.shields.io/badge/Android_Studio-90a7b4?style=plastic&logo=androidstudio&logoColor=white" alt="Android Studio">
+                <img src="https://img.shields.io/badge/Odoo-90a7b4?style=plastic&logo=odoo&logoColor=white" alt="Odoo ERP">
+                <img src="https://img.shields.io/badge/Unity-90a7b4?style=plastic&logo=unity&logoColor=white" alt="Unity">
+            </div>
+          </div>
+
+          <!-- Control de versiones -->
+          <div class="skill-card">
+            <h3>CONTROL DE VERSIONES</h3>
+            <div class="skill-icons">
+                <img src="https://img.shields.io/badge/Git-84a9bd?style=plastic&logo=git&logoColor=white" alt="Git">
+                <img src="https://img.shields.io/badge/GitHub-84a9bd?style=plastic&logo=github&logoColor=white" alt="GitHub">
+                <img src="https://img.shields.io/badge/Git_Flow-84a9bd?style=plastic&logo=git&logoColor=white" alt="Git Flow">
+            </div>
+          </div>
        
-          <h4>FRONTEND</h4> 
 
-            <img src="https://img.shields.io/badge/Jetpack_Compose-a3a3a2?style=plastic&logo=android&logoColor=white" alt="Jetpack Compose">
-            <img src="https://img.shields.io/badge/Room-a3a3a2?style=plastic&logo=android&logoColor=white" alt="Room DB">
-            <img src="https://img.shields.io/badge/Retrofit-a3a3a2?style=plastic" alt="Retrofit">
-            <img src="https://img.shields.io/badge/React_Native-a3a3a2?style=plastic&logo=react&logoColor=white" alt="React Native">
-
-          <h4>BACKEND</h4>
-
-            <img src="https://img.shields.io/badge/Spring_Boot-a3a3a2?style=plastic&logo=spring-boot&logoColor=white" alt="Spring Boot">
-            <img src="https://img.shields.io/badge/Node.js-a3a3a2?style=plastic&logo=node.js&logoColor=white" alt="Node.js">
-
-          <h4>OTROS</h4>
-
-            <img src="https://img.shields.io/badge/Figma-a3a3a2?style=plastic&logo=figma&logoColor=white" alt="Figma">
-
-          <h3>BASES DE DATOS / SUPORTE REMOTO</h3>
-
-           <img src="https://img.shields.io/badge/PostgreSQL-9aa5ab?style=plastic&logo=postgresql&logoColor=white" alt="PostgreSQL">
-           <img src="https://img.shields.io/badge/MySQL-9aa5ab?style=plastic&logo=mysql&logoColor=white" alt="MySQL">
-           <img src="https://img.shields.io/badge/SQLite-9aa5ab?style=plastic&logo=sqlite&logoColor=white" alt="SQLite">
-           <img src="https://img.shields.io/badge/Supabase-9aa5ab?style=plastic&logo=supabase&logoColor=white" alt="Supabase">
-
-          <h3>ENTORNOS DE DESARROLLO</h3>
-           
-           <img src="https://img.shields.io/badge/Eclipse-90a7b4?style=plastic&logo=eclipseide&logoColor=white" alt="Eclipse">
-           <img src="https://img.shields.io/badge/Visual_Studio_Code-90a7b4?style=plastic&logo=visualstudiocode&logoColor=white" alt="Visual Studio Code">
-           <img src="https://img.shields.io/badge/Android_Studio-90a7b4?style=plastic&logo=androidstudio&logoColor=white" alt="Android Studio">
-           <img src="https://img.shields.io/badge/Odoo-90a7b4?style=plastic&logo=odoo&logoColor=white" alt="Odoo ERP">
-           <img src="https://img.shields.io/badge/Unity-90a7b4?style=plastic&logo=unity&logoColor=white" alt="Unity">
-
-           <h3>CONTROL DE VERSIONES</h3>
-
-           <img src="https://img.shields.io/badge/Git-84a9bd?style=plastic&logo=git&logoColor=white" alt="Git">
-           <img src="https://img.shields.io/badge/GitHub-84a9bd?style=plastic&logo=github&logoColor=white" alt="GitHub">
-           <img src="https://img.shields.io/badge/Git_Flow-84a9bd?style=plastic&logo=git&logoColor=white" alt="Git Flow">
-
+        <!-- Formandome en -->
+          <div class="skill-card">
+            <h3>FORMANDOME EN </h3>
+            <div class="skill-icons">
+              <img src="https://img.shields.io/badge/Python-aba099?style=plastic&logo=python&logoColor=white" alt="Python">
+              <img src="https://img.shields.io/badge/JavaScript-aba099?style=plastic&logo=javascript&logoColor=white" alt="JavaScript">
+            </div>
+          </div>
+       </div>
 
       </section>
 
-      <section class="contactos">
-        <h2>CONTACTOS</h2>
-        <ul>
-          <li><i class="fa-solid fa-envelope"></i> lis.torres.robalino@gmailcom</li>
-          <li><i class="fa-solid fa-phone"></i> 656679039</li>
-          <li><img src="Image/linkedin_icon_.png"/> lis.torres.robalino@gmailcom</li>
-        </ul>
-
-        <table>
-          <h3>Desarrollado com:</h3>
-          <tr>
-            <td><img src="https://img.shields.io/badge/HTML5-aba099?style=plastic&logo=html5&logoColor=white" alt="HTML5"></td>
-            <td><img src="https://img.shields.io/badge/CSS3-aba099?style=plastic&logo=css3&logoColor=white" alt="CSS3"></td>
-            <td><img src="https://img.shields.io/badge/JavaScript-aba099?style=plastic&logo=javascript&logoColor=white" alt="JavaScript"></td>
-          </tr>
-        </table>
+      
+      <section id="habilidades" class="habilidades-wrapper">
+        <h2>HABILIDADES SOCIALES</h2>
+        <div class="carrusel-social">
+          <div class="slide-track">
+            <div class="slide">
+              <i class="fas fa-comments"></i>
+              <p>Comunicación</p>
+            </div>
+            <div class="slide">
+              <i class="fas fa-users"></i>
+              <p>Trabajo en equipo</p>
+            </div>
+            <div class="slide">
+              <i class="fas fa-lightbulb"></i>
+              <p>Creatividad</p>
+            </div>
+            <div class="slide">
+              <i class="fas fa-sync-alt"></i>
+              <p>Adaptabilidad</p>
+            </div>
+            <div class="slide">
+              <i class="fas fa-handshake"></i>
+              <p>Empatía</p>
+            </div>
+          </div>
+        </div>
       </section>
 
+      <section id="educacion-certificados" class="educacion-wrapper">
+        <h2>EDUCACIÓN Y CERTIFICADOS</h2>
+        <div class="educacion-container">
+          <!-- Columna izquierda: Educación -->
+          <div class="columna">
+            <div class="educacion-card">
+              <h3>Técnico Superior en Desarrollo de Aplicaciones Multiplataforma (DAM)</h3>
+              <p><i class="fas fa-school"></i> IES Islas Filipinas</p>
+              <p><i class="fas fa-calendar-alt"></i> 2023 - 2025</p>
+            </div>
+            <div class="educacion-card">
+              <h3>Técnico Superior en Asistencia a la Dirección</h3>
+              <p><i class="fas fa-school"></i> IES Islas Filipinas</p>
+              <p><i class="fas fa-calendar-alt"></i> 2019 - 2022</p>
+            </div>
+          </div>
+
+          <!-- Columna derecha: Certificados -->
+          <div class="columna">
+            <div class="educacion-card">
+              <h3>Ciberseguridad y privacidad para empresas</h3>
+              <p><i class="fas fa-certificate"></i> Fundación Telefónica</p>
+              <div id="contenedorCertificado">
+                <i class="fa-solid fa-eye" onclick="toggleImagen()"></i>
+                <img id="miImagen" src="Image/Certificado.png" alt="Certificado">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contacto" class="contacto-wrapper">
+        <h2>CONTACTO</h2>
+        <div class="contacto-contenedor">
+          <!-- Columna izquierda: Imagen -->
+          <div class="contacto-imagen">
+            <img src="Image/icono-contactos.png" alt="Contacto ilustración">
+          </div>
+
+          <!-- Columna derecha: Datos -->
+          <div class="contacto-datos">
+            <ul>
+              <li><i class="fa-solid fa-envelope"></i> lis.torres.robalino@gmail.com</li>
+              <li><i class="fab fa-linkedin"></i> linkedin.com/in/josselyn-lizeth-torres-robalino</li>
+              <li><i class="fab fa-github"></i> github.com/LisJTR</li>
+            </ul>
+          </div>
+       </div>
+
+            <div class="footer-desarrollado">
+              <h4>Desarrollado con:</h4>
+              <div class="footer-icons">
+                <img src="https://img.shields.io/badge/HTML5-aba099?style=plastic&logo=html5&logoColor=white" alt="HTML5">
+                <img src="https://img.shields.io/badge/CSS3-aba099?style=plastic&logo=css3&logoColor=white" alt="CSS3">
+                <img src="https://img.shields.io/badge/JavaScript-aba099?style=plastic&logo=javascript&logoColor=white" alt="JavaScript">
+              </div>
+            </div>
+          </section>
     </main>
   </div>
   <script src="script.js"></script>

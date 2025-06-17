@@ -12,3 +12,9 @@ document.addEventListener("click", function (event) {
     imagen.classList.remove("visible");
   }
 });
+
+
+
+
+
+
