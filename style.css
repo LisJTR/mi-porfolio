@@ -440,7 +440,7 @@ body {
   color: #e8c489;
 }
 
-#contenedorCertificado {
+.contenedor-certificado {
   margin-top: 10px;
   display: flex;
   flex-direction: column;
@@ -448,16 +448,17 @@ body {
   gap: 10px;
 }
 
-#contenedorCertificado img {
+.imagen-certificado {
   display: none;
-  width: 100%;         /* se adapta al contenedor */
-  max-width: 500px;    /* limita el tamaño */
+  width: 100%;
+  max-width: 500px;
   border-radius: 10px;
-  box-shadow: 0 0 8px #888;
+  box-shadow: 0 0 8px rgba(0,0,0,0.3);
 }
 
+
 /* Clase visible */
-#miImagen.visible {
+.imagen-certificado.visible {
   display: block;
 }
 
