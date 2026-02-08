@@ -150,13 +150,13 @@ body {
 }
 
 .botones-hero i {
-  color: #f9a826; /* naranja */
-  font-size: 1.3rem; /* opcional: aumenta el tamaño si quieres */
+  color: #f9a826; 
+  font-size: 1.3rem; 
   transition: color 0.3s ease;
 }
 
 .botones-hero i:hover {
-  color: #d48e00; /* tono más oscuro al pasar el ratón (opcional) */
+  color: #d48e00; 
 }
 
 /*SOBRE MI*/
